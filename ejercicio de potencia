@@ -1,0 +1,12 @@
+entero a,b,c
+inicio 
+	a<-2
+	Escriba "Ingrese la potencia: "
+	Lea b
+		c<-a
+		Mientras b>1 haga
+			c<-c*a
+			b<-b-1
+		fin mientras
+	Escriba "El resultado es: ",c 
+fin 
