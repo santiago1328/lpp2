@@ -1,0 +1,31 @@
+Entero a,b
+inicio
+	escriba "cuantas fotocopias quieres sacar"
+	llamar nueva_linea
+	lea a
+	Si a<100 Entonces
+		a<-a*100
+		Escriba "el precio es ",a
+	Sino
+		Si (a>=100) y (a<=200) Entonces
+			a<-(a*100)
+			b<-a*12/100
+			a<-a-b
+			Escriba "el precio es ",a
+		Sino
+			Si (a>=201) y (a<=400) Entonces
+				a<-(a*100)
+				b<-a*15/100
+				a<-a-b
+				Escriba "el precio es ",a
+			Sino
+				Si a>400 Entonces
+					a<-(a*100)
+					b<-a*18/100
+					a<-a-b
+					Escriba "el precio es ",a
+				Fin Si
+			Fin Si	
+		Fin Si
+Fin Si
+fin
